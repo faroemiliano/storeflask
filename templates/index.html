@@ -1,0 +1,30 @@
+{%extends 'base.html'%} {%block title%}Home{%endblock%} {%block content%}
+<div class="container mt-5">
+  <div class="text-center">
+    <h1 class="display-4">Online Store</h1>
+    <p class="lead">Funciones del catálogo</p>
+  </div>
+  <div class="d-flex justify-content-center">
+    <ul
+      class="list-group list-group-flush text-center"
+      style="max-width: 400px"
+    >
+      <li class="list-group-item">
+        <a
+          href="{{ url_for('lista_productos') }}"
+          class="btn btn-primary btn-lg btn-block"
+          >Productos</a
+        >
+      </li>
+      <li class="list-group-item">
+        <a
+          href="{{ url_for('add_productos') }}"
+          class="btn btn-success btn-lg btn-block"
+          >Adicionar Producto</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+{%endblock%}
